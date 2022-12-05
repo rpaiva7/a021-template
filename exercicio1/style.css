@@ -1,0 +1,40 @@
+
+#titulo-importante{
+    background-color: purple;
+} 
+
+/* Esse acima é o formato de alteração através do id. A alteração do id tem prevalência/é mais forte que a alteração da tag, nesse caso a tag h1  */
+
+
+h1{
+    background-color: blue;
+    color: #fff;  /* O uso da sequência de letras para as cores é mais padronizada que o nome da cor */
+}
+
+h2{
+    background-color: yellow;
+}
+
+/* Também podemos alterar a cor do fundo do h2 através da class no formato abaixo: */
+
+.sub-titulo{
+    background-color: yellow;
+}
+
+section{
+    background-color: green;
+}
+
+/* Como a class das duas sections tem o mesmo nome, posso alterar a cor do h3 e h4 das sections para branco de uma só vez alterando a cor da class, usando o formato abaixo: */
+
+.titulo-secao{
+    color: #fff;
+}
+
+footer{
+    background-color: black;
+    color: #fff;
+}
+
+/* No exemplo acima eu poderia alterar a cor da fonte do footer para branco separando o h4 do footer, mas aí se eu tivesse mais h4's dentro do HTML em outras tags a cor de todos seria alterada, por isso é melhor alterar a cor do h4 dentro do footer mesmo, para que somente a cor do texto que estiver dentro do footer seja alterada. */
+

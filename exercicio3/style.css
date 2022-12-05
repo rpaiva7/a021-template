@@ -2,24 +2,47 @@
   padding: 0;
   margin: 0;
 }
+
+/* O asterisco com a margin e padding zerados no topo da tela siginifica que estou começando a trabalhar neste arquivo CSS com a configuração zerada em todos os elementos. Sempre importante começar a trabalhar com o arquivo zerado. Isso evita muitos problemas com a pré-configuração automática de alguns elementos */ 
+
+
 header{
   
 }
 
+main{
+  font-family: Helvetica;
+  background-color: aqua;
+  
+}
+
 section{
-  float: left;
+  /* float: left; */
 /*float é uma propriedade que permite deixar elementos à direita ou à esquerda da tela. Não costuma ser usado. Aqui, é usado apenas para ilustrar diferenças.*/
-  width: 840px;
-  padding: 40px;
+  width: 50vw; 
+  /* padding: 40px; */
+  background-color: violet;
 }
 
 aside{
-  float:right;
+  /* float:right; */
  /*float é uma propriedade que permite deixar elementos à direita ou à esquerda da tela. Não costuma ser usado. Aqui, é usado apenas para ilustrar diferenças.*/
-  padding: 20px;
-  width: 340px;
+  /* padding: 20px; */
+  width: 30%;
+  background-color: yellowgreen;
 }
 
 article{
   margin: 10px 0;
 }
+
+
+/* Diferença entre vh, vw e % - As unidades vh e vw significam viewport, sendo a primeira para altura e a segunda para largura. Isso significa que elas utilizam o tamanho total da viewport (tamanho do nosso dispositivo), ou seja, uma altura de 100vh corresponde a 100% da página total, do nosso corpo do documento (body).
+
+Já a porcentagem ( % ) são unidades relativas ao elemento ancestral (elemento pai) mais próximo. Mas o que isso quer dizer? Se colocarmos a largura de uma imagem para 100%, significa que ela ocupará 100% do espaço disponível. Isso significa que se a nossa div tiver 200px, a imagem ocupará 200px de largura (100%). Ex. se meu elemento pai tem uma heigth de 100px e minha porcentagem é de 25%, significa que minha porcentagem é 25% de 100px, e não da tela inteira.
+
+Mas agora, se colocarmos a largura da imagem para 100vw (medida da viewport), independente de qual será o tamanho da nossa div, a imagem ocupará toda a nossa tela, pois a viewport significa toda a página. */
+
+/* Obs. vw, vh e % são elementos responsivos. Ou seja, eles se adaptam ao tamanho da tela. Já o pixel (px) não é responsivo.  */
+
+/* obs. vw (viewport) é 1% da tela. % (porcentagem) é relativo ao elemento pai. Nesse caso o elemento pai da section é a main.  */
