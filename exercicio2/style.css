@@ -1,22 +1,30 @@
+
+/* Sei que todas abaixo são class porque começam com .(ponto) */
+
 .longe-bordas{
     background-color: #FFA6A9;
+    padding: 10px;
   }
   
   .afastado{
     background-color: #77C0ED;
+    margin-left: 50px;
   }
   .alto{
     background-color: #C3E887;
+    height: 300px;
   }
   
   .largo{
   background-color: #FFE396;
+  width: 500px;
   }
   
   .bordado{
     background-color: #AF9BCC;
+    border: 1px solid black;
   }
   
   .sumido{
-   
+   display: none;  /* Formato para tornar um elemento invisível */
   }
